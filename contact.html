@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Jayvijay Enterprises — WhatsApp Jay for hardware, WhatsApp Vijay for compliance services. Located at HUDCO, Nanded." />
+  <title>Contact Us | Jayvijay Enterprises</title>
+  <link rel="icon" href="assets/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__shri">॥ श्री ॥</span>
+        <span class="navbar__name">JAY<span>VIJAY</span> Enterprises</span>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="founders.html">Our Founders</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Join Our Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="navbar__cta">💬 WhatsApp Us</a>
+      </div>
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-banner">
+    <h1>Contact Us</h1>
+    <p>Reach the right division — fast responses via WhatsApp</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Contact</span>
+    </div>
+  </div>
+
+  <!-- ══ DIVISION CONTACTS ══ -->
+  <section style="padding: var(--section-pad);">
+    <div class="container">
+      <div class="section-head fade-in">
+        <p class="overline">REACH US DIRECTLY</p>
+        <h2>Contact the Right Division</h2>
+        <div class="section-divider"></div>
+        <p>Each division has a dedicated contact. WhatsApp for the fastest response.</p>
+      </div>
+
+      <div class="contact-divisions">
+
+        <div class="contact-div-card contact-div-card--jay fade-in">
+          <div class="contact-div-header">
+            <div class="contact-div-icon">🔧</div>
+            <div>
+              <span class="division-badge division-badge--jay">Jay Division</span>
+              <h3>Jay</h3>
+              <p>Hardware &amp; Products Enquiries</p>
+            </div>
+          </div>
+          <ul class="contact-detail-list">
+            <li>📱 <strong>+91 92709 75327</strong></li>
+            <li>🏢 Datta Krupa Complex, HUDCO, Nanded</li>
+            <li>⏰ Mon–Sat: 9:00 AM – 7:00 PM</li>
+          </ul>
+          <p class="contact-note">Contact Jay for: Double Punch Reti, Garden Pipe, Binding Wire, Centring Nails, Ghamela, bulk orders &amp; pricing.</p>
+          <button class="btn btn-wa btn--full"
+            onclick="openWhatsApp('jay', 'Hello Jay, I want to enquire about hardware products from Jayvijay Enterprises.')">
+            💬 WhatsApp Jay Now
+          </button>
+        </div>
+
+        <div class="contact-div-card contact-div-card--vijay fade-in">
+          <div class="contact-div-header">
+            <div class="contact-div-icon">📋</div>
+            <div>
+              <span class="division-badge division-badge--vijay">Vijay Division</span>
+              <h3>Vijay</h3>
+              <p>Compliance &amp; Consultancy Enquiries</p>
+            </div>
+          </div>
+          <ul class="contact-detail-list">
+            <li>📱 <strong>+91 92705 13565</strong></li>
+            <li>🏢 Datta Krupa Complex, HUDCO, Nanded</li>
+            <li>⏰ Mon–Sat: 9:00 AM – 7:00 PM</li>
+          </ul>
+          <p class="contact-note">Contact Vijay for: Factory License, MPCB/CPCB, MIDC work, Fire NOC, Labour Law, MSME Registration, Environmental Services.</p>
+          <button class="btn btn-wa btn--full"
+            onclick="openWhatsApp('vijay', 'Hello Vijay, I need help with compliance/licensing services from Jayvijay Enterprises.')">
+            💬 WhatsApp Vijay Now
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ENQUIRY FORM + INFO ══ -->
+  <section style="background: var(--gray-50); padding: var(--section-pad);">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="form-section fade-in">
+          <h3>Send an Enquiry</h3>
+          <p class="text-muted" style="margin-bottom:24px;font-size:.9rem;">Fill in the form and we'll WhatsApp you back shortly.</p>
+
+          <form onsubmit="handleEnquiry(event)">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label for="mobile">WhatsApp Number *</label>
+              <input type="tel" id="mobile" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+            <div class="form-group">
+              <label for="division">Which Division?</label>
+              <select id="division">
+                <option value="jay">🔧 Jay Division — Hardware Products</option>
+                <option value="vijay">📋 Vijay Division — Compliance / Consultancy</option>
+                <option value="main">❓ Not Sure — General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="service">Service / Product Needed</label>
+              <select id="service">
+                <optgroup label="Jay Division — Hardware">
+                  <option>Double Punch Reti</option>
+                  <option>Garden Pipe</option>
+                  <option>Binding Wire</option>
+                  <option>Centring Nails</option>
+                  <option>Ghamela</option>
+                </optgroup>
+                <optgroup label="Vijay Division — Services">
+                  <option>Factory License</option>
+                  <option>MPCB / CPCB Approvals</option>
+                  <option>MIDC Land &amp; Transfer Work</option>
+                  <option>Fire NOC</option>
+                  <option>Labour Law Licensing</option>
+                  <option>MSME नोंदणी</option>
+                  <option>Environmental Impact Assessment</option>
+                  <option>Waste Management Solutions</option>
+                  <option>Water Management Solutions</option>
+                  <option>Effluent Management Solutions</option>
+                  <option>Sustainability Audits</option>
+                  <option>Carbon Footprint Analysis</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option>General Enquiry</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell us more about your requirement..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-wa btn--full">💬 Send via WhatsApp</button>
+          </form>
+        </div>
+
+        <div class="info-section fade-in">
+          <div class="info-card">
+            <h4>📍 Our Office</h4>
+            <p>Datta Krupa Complex,<br>Underground Shop No. 4,<br>HUDCO Bus Stop, Nanded,<br>Maharashtra – 431603</p>
+          </div>
+          <div class="info-card">
+            <h4>⏰ Business Hours</h4>
+            <table class="hours-table">
+              <tr><td>Monday – Saturday</td><td><strong>9:00 AM – 7:00 PM</strong></td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </table>
+          </div>
+          <div class="info-card">
+            <h4>✉️ Email</h4>
+            <a href="mailto:mangaldarsewad86@gmail.com" style="color:var(--blue);font-size:.9rem;">mangaldarsewad86@gmail.com</a>
+          </div>
+          <div class="info-card info-card--reg">
+            <h4>✅ Registration Details</h4>
+            <p style="font-size:.82rem;">Shops Act Reg. No. <strong>2541600320645296</strong><br>Aurangabad Division | Nanded District<br>Office of the Asst. Commissioner of Labour, Nanded</p>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-box">
+            <div class="map-placeholder">
+              <div style="font-size:2rem;margin-bottom:8px">📍</div>
+              <strong>HUDCO Bus Stop, Nanded</strong>
+              <p style="font-size:.82rem;margin-top:6px;color:#5a7ab0;">Datta Krupa Complex, Underground Shop No.4</p>
+              <a href="https://maps.google.com/?q=HUDCO+Bus+Stop+Nanded+Maharashtra" target="_blank"
+                 style="display:inline-block;margin-top:12px;padding:8px 20px;background:var(--blue);color:#fff;border-radius:6px;font-size:.83rem;font-weight:700;">
+                Open in Google Maps →
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="shri">॥ श्री ॥</p>
+          <h3>JAYVIJAY Enterprises</h3>
+          <p>Commercial and Industrial Consultancy<br>Datta Krupa Complex, HUDCO Bus Stop, Nanded – 431603</p>
+          <div class="footer__reg">Shops Act Reg. No. 2541600320645296 | Aurangabad Division</div>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="founders.html">Our Founders</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Join Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="products.html">🔧 Jay Division</a></li>
+            <li><a href="services.html">📋 Vijay Division</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/919270975327" target="_blank">💬 Jay: +91 92709 75327</a></li>
+            <li><a href="https://wa.me/919270513565" target="_blank">💬 Vijay: +91 92705 13565</a></li>
+            <li><a href="mailto:mangaldarsewad86@gmail.com">✉️ Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Jayvijay Enterprises. All rights reserved.</span>
+        <span class="footer__reg-badge">✅ Govt. Registered Establishment</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/919370321210" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/global.js"></script>
+  <script>
+    function handleEnquiry(e) {
+      e.preventDefault();
+      const name    = document.getElementById('name').value;
+      const mobile  = document.getElementById('mobile').value;
+      const div     = document.getElementById('division').value;
+      const service = document.getElementById('service').value;
+      const msg     = document.getElementById('message').value;
+      const text = `Hello, I am *${name}* (${mobile}).\n\nEnquiry about: *${service}*\n\n${msg}\n\n_(Sent from Jayvijay Enterprises website)_`;
+      openWhatsApp(div, text);
+    }
+  </script>
+</body>
+</html>

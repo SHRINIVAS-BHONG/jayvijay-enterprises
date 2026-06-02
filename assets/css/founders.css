@@ -1,0 +1,128 @@
+/* ============================================
+   FOUNDERS PAGE STYLES — assets/css/founders.css
+   ============================================ */
+
+.overline {
+  font-size: .73rem; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--blue);
+  margin-bottom: 8px; display: block;
+}
+
+/* ── Proprietor Card ── */
+.proprietor-section { padding: var(--section-pad); }
+.proprietor-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: start;
+  background: var(--white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+}
+.proprietor-img {
+  width: 100%; aspect-ratio: 3/4;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--gray-100);
+  display: flex; align-items: center; justify-content: center;
+}
+.proprietor-img img { width: 100%; height: 100%; object-fit: cover; }
+.avatar-fallback {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; font-weight: 800;
+  color: var(--white); background: var(--navy);
+  border-radius: var(--radius-md);
+}
+
+.proprietor-label {
+  font-size: .72rem; font-weight: 700; letter-spacing: 2px;
+  color: var(--blue); text-transform: uppercase;
+  display: block; margin-bottom: 8px;
+}
+.proprietor-info h2   { color: var(--navy); margin-bottom: 4px; }
+.proprietor-sub       { color: var(--gray-600); font-size: .97rem; margin-bottom: 18px; }
+.reg-info {
+  display: flex; flex-direction: column; gap: 6px;
+  font-size: .83rem; color: var(--gray-600);
+  padding: 14px 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+  border-left: 3px solid var(--gold);
+}
+.reg-info strong { color: var(--navy); }
+.proprietor-bio  { font-size: .93rem; color: var(--gray-600); margin-bottom: 12px; }
+.proprietor-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+
+/* ── Division Cards ── */
+.division-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.division-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1.5px solid;
+  box-shadow: var(--shadow-sm);
+}
+.division-card--jay   { border-color: #b8d0f5; }
+.division-card--vijay { border-color: #a8dbb8; }
+
+.division-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+}
+.division-card--jay   .division-header { background: linear-gradient(135deg, #e3f0ff, #f0f6ff); }
+.division-card--vijay .division-header { background: linear-gradient(135deg, #e3f7ee, #f0faf4); }
+
+.division-avatar {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 3px solid var(--white);
+  box-shadow: var(--shadow-sm);
+}
+.division-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.division-header h3 { font-size: 1.2rem; color: var(--navy); margin: 4px 0 2px; }
+.division-role      { font-size: .82rem; color: var(--gray-600); margin: 2px 0; }
+.division-number    { font-size: .82rem; color: var(--blue); font-weight: 600; margin: 4px 0 0; }
+
+.division-body { padding: 24px; }
+.division-body p { font-size: .88rem; color: var(--gray-600); margin-bottom: 16px; }
+.division-body h4 { font-size: .87rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+.division-list { display: flex; flex-direction: column; gap: 7px; margin-bottom: 20px; }
+.division-list li { font-size: .85rem; color: var(--gray-600); }
+.btn--full { width: 100%; justify-content: center; }
+
+/* ── Credentials ── */
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.cred-card {
+  background: var(--gray-50);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 22px 18px;
+  text-align: center;
+}
+.cred-icon { font-size: 2rem; margin-bottom: 10px; }
+.cred-card h4 { color: var(--navy); margin-bottom: 8px; font-size: .95rem; }
+.cred-card p  { font-size: .83rem; color: var(--gray-600); line-height: 1.6; }
+.cred-card strong { color: var(--navy); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .proprietor-card { grid-template-columns: 1fr; }
+  .proprietor-img  { max-width: 260px; margin: 0 auto; }
+  .division-cards  { grid-template-columns: 1fr; }
+}
