@@ -34,11 +34,14 @@ jayvijay-enterprises/
 │   │   └── careers.js      ← Apply form
 │   │
 │   └── images/
-│       ├── logo/           ← logo.png, logo-white.png, favicon.ico
-│       ├── founders/       ← mangal-darsewad.jpg, jay-division.jpg, vijay-division.jpg
-│       ├── products/       ← product photos (5 images)
-│       ├── office/         ← office photos
-│       └── certificates/   ← scanned certificates
+│       ├── logo/
+│       │   └── favicon.ico
+│       └── products/
+│           ├── double-punch-reti.jpg
+│           ├── garden-pipe.jpg
+│           ├── binding-wire.jpg
+│           ├── centring-nails.jpg
+│           └── ghamela.jpg
 └── README.md
 ```
 
@@ -63,46 +66,41 @@ Upload via cPanel File Manager or FTP to any shared hosting (Hostinger, GoDaddy,
 
 ## 📸 Images to Add
 
-Replace placeholder images in `assets/images/`:
+Add these images to `assets/images/`:
 
-| File | What to put |
-|------|-------------|
-| `founders/mangal-darsewad.jpg` | Photo of proprietor Mangal Darsewad |
-| `founders/jay-division.jpg` | Photo of Jay (division head) |
-| `founders/vijay-division.jpg` | Photo of Vijay (division head) |
-| `products/double-punch-reti.jpg` | Product photo |
-| `products/garden-pipe.jpg` | Product photo |
-| `products/binding-wire.jpg` | Product photo |
-| `products/centring-nails.jpg` | Product photo |
-| `products/ghamela.jpg` | Product photo |
-| `office/office-front.jpg` | Shop exterior photo |
-| `logo/logo.png` | Company logo |
-| `logo/favicon.ico` | Browser favicon |
+| File Path | Alt Text | Description |
+|-----------|----------|-------------|
+| `assets/images/logo/favicon.ico` | - | Website favicon (browser tab icon) |
+| `assets/images/products/double-punch-reti.jpg` | Double Punch Reti | Product image for double punch wire mesh |
+| `assets/images/products/garden-pipe.jpg` | Garden Pipe | Product image for PVC garden pipe |
+| `assets/images/products/binding-wire.jpg` | Binding Wire | Product image for black binding wire |
+| `assets/images/products/centring-nails.jpg` | Centring Nails | Product image for heavy-duty centring nails |
+| `assets/images/products/ghamela.jpg` | Ghamela | Product image for mixing pan/ghamela |
 
+> **Note:** Founder photos are no longer used. All product images have emoji fallbacks if missing.
 > **Tip:** Use `.webp` format for faster loading. Compress images at squoosh.app before uploading.
 
 ---
 
-## 💬 WhatsApp Numbers (configured in global.js)
+## � Contact Information
 
-| Contact | Number | Purpose |
-|---------|--------|---------|
-| Jay | +91 92709 75327 | Hardware Sales |
-| Vijay | +91 92705 13565 | Compliance / Services |
-| Main (Mangal) | +91 93703 21210 | General / Float button |
+| Type | Details |
+|------|---------|
+| **Phone** | +91 92709 75327 |
+| **Email** | mangaldarsewad86@gmail.com |
+| **WhatsApp** | +91 92709 75327 |
 
-To change numbers, edit `assets/js/global.js` → `const WA = { ... }` at the top.
+> **Note:** The WhatsApp float button has been removed from all pages.
 
 ---
 
 ## ✅ Checklist Before Going Live
 
-- [ ] Add all photos to `assets/images/`
-- [ ] Verify all WhatsApp numbers are correct
-- [ ] Add favicon.ico
+- [ ] Add product photos to `assets/images/products/`
+- [ ] Add favicon.ico to `assets/images/logo/`
+- [ ] Verify all WhatsApp links open correctly
 - [ ] Test on mobile (Chrome DevTools → Toggle device)
-- [ ] Test all WhatsApp links open correctly
-- [ ] Upload scanned certificates to `assets/images/certificates/`
+- [ ] Test email links in careers page
 
 ---
 
