@@ -131,6 +131,7 @@
   .proprietor-card { grid-template-columns: 1fr; }
   .proprietor-img  { max-width: 260px; margin: 0 auto; }
   .division-cards  { grid-template-columns: 1fr; }
+  .division-cards.single-division { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .proprietor-section { padding: 40px 1.5rem; }
@@ -138,4 +139,5 @@
   .proprietor-info h2 { font-size: 1.6rem; }
   .division-card .division-header { flex-direction: column; text-align: center; }
   .division-avatar { margin: 0 auto; }
+  .division-cards { gap: 16px; }
 }

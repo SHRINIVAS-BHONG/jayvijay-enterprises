@@ -203,7 +203,9 @@
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .about-strip__inner { grid-template-columns: 1fr; gap: 28px; }
-  .hero__div { min-width: 130px; padding: 12px 18px; }
+  .hero__divisions { flex-direction: column; align-items: center; }
+  .hero__div { width: 280px; min-width: 280px; padding: 16px 24px; }
+  .hero__div-sep { display: none; }
   .stat-item { padding: 10px 20px; }
   .cta-banner__inner { flex-direction: column; text-align: center; }
   .cta-banner__btns { justify-content: center; }
@@ -214,10 +216,11 @@
   .hero__title { font-size: 2rem; }
   .hero__ent { font-size: 1.4rem; }
   .hero__sub { font-size: 0.95rem; }
-  .hero__divisions { gap: 12px; margin-bottom: 24px; }
-  .hero__div { min-width: 110px; padding: 10px 14px; }
-  .hero__div-sep { font-size: 1.2rem; }
-  .hero__btns { gap: 8px; padding-bottom: 32px; }
+  .hero__divisions { gap: 16px; margin-bottom: 24px; flex-direction: column; }
+  .hero__div { width: 100%; min-width: 100%; padding: 14px 20px; }
+  .hero__div-sep { display: none; }
+  .hero__btns { gap: 8px; padding-bottom: 32px; flex-direction: column; width: 100%; }
+  .hero__btns .btn { width: 100%; justify-content: center; }
   .hero__stats { padding: 16px 0; gap: 0; }
   .stat-item { padding: 10px 16px; }
   .stat-num { font-size: 1.4rem; }
@@ -225,7 +228,7 @@
   .about-strip__inner { gap: 20px; }
   .about-strip__text h2 { font-size: 1.4rem; }
   .about-strip__text p { font-size: 0.9rem; }
-  .div-card { padding: 16px 14px; }
+  .div-card { padding: 16px 14px; min-height: auto; height: auto; }
   .div-card h3 { font-size: 0.95rem; }
   .div-card p { font-size: 0.82rem; }
   .svc-overview__grid { grid-template-columns: 1fr; }
