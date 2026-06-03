@@ -13,7 +13,7 @@ jayvijay-enterprises/
 ├── index.html          ← Home Page
 ├── founders.html       ← Our Founders (Proprietor + Divisions)
 ├── products.html       ← Jay Division Products
-├── services.html       ← Vijay Division Services
+├── services.html       ← Services Division
 ├── careers.html        ← Join Our Team
 ├── contact.html        ← Contact + WhatsApp Enquiry Form
 │
