@@ -100,6 +100,7 @@ p  { line-height: 1.75; }
 .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 .btn-wa        { background: var(--wa-green); color: var(--white); border-color: var(--wa-green); }
 .btn-wa:hover  { background: var(--wa-dark); border-color: var(--wa-dark); }
+.btn--full     { width: 100%; justify-content: center; }
 
 /* ── Section Headings ── */
 .section-head { text-align: center; margin-bottom: 48px; }
