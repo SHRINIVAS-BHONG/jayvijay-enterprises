@@ -126,7 +126,23 @@
   .careers-perks { grid-template-columns: 1fr 1fr; }
   .form-row      { grid-template-columns: 1fr; }
 }
-@media (max-width: 480px) {
-  .careers-perks    { grid-template-columns: 1fr; }
+@media (max-width: 640px) {
+  .careers-hero { gap: 20px; }
+  .careers-hero__text h2 { font-size: 1.4rem; }
+  .careers-hero__text p { font-size: 0.9rem; }
+  .careers-perks { grid-template-columns: 1fr; gap: 12px; }
+  .perk-item { padding: 16px 14px; }
+  .perk-icon { font-size: 1.4rem; }
+  .perk-item h4 { font-size: 0.9rem; }
+  .perk-item p { font-size: 0.8rem; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .job-card { border-radius: 12px; padding: 18px 16px; }
+  .job-card h3 { font-size: 1rem; }
+  .job-meta { flex-direction: column; gap: 4px; font-size: 0.75rem; }
+  .job-card p { font-size: 0.82rem; }
+  .job-card h4 { font-size: 0.82rem; }
+  .job-req-list li { font-size: 0.8rem; }
   .application-form { padding: 22px 16px; }
+  .form-group label { font-size: 0.82rem; }
+  .form-group input, .form-group select, .form-group textarea { font-size: 0.9rem; }
 }

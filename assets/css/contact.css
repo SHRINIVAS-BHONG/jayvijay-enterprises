@@ -92,3 +92,28 @@
   .contact-divisions { grid-template-columns: 1fr; }
   .contact-grid      { grid-template-columns: 1fr; }
 }
+@media (max-width: 640px) {
+  .contact-divisions { grid-template-columns: 1fr; gap: 16px; }
+  .contact-div-card { border-radius: 12px; }
+  .contact-div-header { padding: 18px; gap: 12px; }
+  .contact-div-icon { font-size: 1.6rem; }
+  .contact-div-header h3 { font-size: 1rem; }
+  .contact-div-header p { font-size: 0.75rem; }
+  .contact-detail-list { padding: 16px 18px 0; gap: 6px; }
+  .contact-detail-list li { font-size: 0.82rem; }
+  .contact-note { font-size: 0.8rem; padding: 12px 18px; margin: 12px 0; }
+  .contact-grid { grid-template-columns: 1fr; gap: 18px; }
+  .form-section { padding: 0; }
+  .form-section h3 { font-size: 1.1rem; }
+  .form-group { margin-bottom: 12px; }
+  .form-group label { font-size: 0.82rem; }
+  .form-group input, .form-group select, .form-group textarea { font-size: 0.9rem; padding: 9px 11px; }
+  .form-group textarea { height: 100px; }
+  .info-section { gap: 12px; }
+  .info-card { padding: 16px 18px; border-radius: 10px; }
+  .info-card h4 { font-size: 0.9rem; margin-bottom: 6px; }
+  .info-card p { font-size: 0.8rem; }
+  .hours-table { font-size: 0.8rem; }
+  .map-placeholder { padding: 20px; border-radius: 10px; }
+  .map-placeholder strong { font-size: 0.9rem; }
+}

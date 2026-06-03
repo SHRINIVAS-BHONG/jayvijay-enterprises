@@ -190,8 +190,23 @@
   .quick-contact-box { position: static; }
 }
 @media (max-width: 640px) {
-  .products-grid { grid-template-columns: 1fr; }
+  .prod-intro { padding: 40px 1.5rem; }
+  .prod-intro__inner { gap: 24px; }
+  .prod-intro__text h2 { font-size: 1.4rem; }
+  .prod-intro__text p { font-size: 0.9rem; }
   .prod-intro__highlights { grid-template-columns: 1fr; }
-  .bulk-cta__inner { flex-direction: column; text-align: center; }
-  .bulk-cta__actions { justify-content: center; }
+  .highlight-item { font-size: 0.8rem; padding: 8px 12px; }
+  .quick-contact-box { padding: 20px 18px; margin-top: 16px; }
+  .quick-contact-box__num { font-size: 1.1rem; }
+  .products-grid { grid-template-columns: 1fr; }
+  .prod-card { border-radius: 12px; }
+  .prod-card__img { aspect-ratio: 16/9; }
+  .prod-tag { font-size: 0.7rem; }
+  .prod-card__body h3 { font-size: 1rem; }
+  .prod-card__body p { font-size: 0.82rem; }
+  .prod-specs li { font-size: 0.8rem; }
+  .bulk-cta { padding: 40px 1.5rem; }
+  .bulk-cta__inner { flex-direction: column; text-align: center; gap: 16px; }
+  .bulk-cta h2 { font-size: 1.4rem; }
+  .bulk-cta p { font-size: 0.9rem; }
 }

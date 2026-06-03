@@ -12,7 +12,7 @@
 .proprietor-section { padding: var(--section-pad); }
 .proprietor-card {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 1fr;
   gap: 48px;
   align-items: start;
   background: var(--white);
@@ -20,6 +20,9 @@
   border-radius: var(--radius-lg);
   padding: 40px;
   box-shadow: var(--shadow-sm);
+}
+.proprietor-info.full-width {
+  max-width: 100%;
 }
 .proprietor-img {
   width: 100%; aspect-ratio: 3/4;
@@ -62,6 +65,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
+}
+.division-cards.single-division {
+  grid-template-columns: 1fr 1fr;
 }
 .division-card {
   border-radius: var(--radius-lg);
@@ -125,4 +131,11 @@
   .proprietor-card { grid-template-columns: 1fr; }
   .proprietor-img  { max-width: 260px; margin: 0 auto; }
   .division-cards  { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .proprietor-section { padding: 40px 1.5rem; }
+  .proprietor-card { padding: 24px 16px; }
+  .proprietor-info h2 { font-size: 1.6rem; }
+  .division-card .division-header { flex-direction: column; text-align: center; }
+  .division-avatar { margin: 0 auto; }
 }

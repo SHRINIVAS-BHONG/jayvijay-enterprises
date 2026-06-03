@@ -5,9 +5,9 @@
 
 /* ── WhatsApp Config ── */
 const WA = {
-  jay:   { number: '919270975327', name: 'Jay (Sales Division)' },
-  vijay: { number: '919270513565', name: 'Vijay (Services Division)' },
-  main:  { number: '919370321210', name: 'Jayvijay Enterprises' },
+  jay:   { number: '919270975327', name: 'Jayvijay Enterprises' },
+  vijay: { number: '919270975327', name: 'Jayvijay Enterprises' },
+  main:  { number: '919270975327', name: 'Jayvijay Enterprises' },
 };
 
 /**
