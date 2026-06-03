@@ -50,11 +50,14 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  padding: 16px 28px;
+  padding: 16px 20px;
   border-radius: var(--radius-lg);
   border: 1.5px solid rgba(255,255,255,.15);
   backdrop-filter: blur(4px);
-  min-width: 150px;
+  min-width: 200px;
+  width: 200px;
+  flex: 0 0 200px;
+  box-sizing: border-box;
 }
 .hero__div--jay   { background: rgba(21,101,192,.3); }
 .hero__div--vijay { background: rgba(10,110,58,.3); }
@@ -119,6 +122,12 @@
   border-radius: var(--radius-md);
   border: 1.5px solid;
   position: relative;
+  box-sizing: border-box;
+  min-height: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .div-card--jay   { border-color: #b8d0f5; background: #f0f6ff; }
 .div-card--vijay { border-color: #a8dbb8; background: #f0faf4; }
