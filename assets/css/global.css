@@ -153,7 +153,7 @@ p  { line-height: 1.75; }
 }
 .navbar__brand { display: flex; flex-direction: column; line-height: 1.2; }
 .navbar__shri  { font-size: .75rem; color: var(--gold); letter-spacing: 2px; }
-.navbar__name  { font-size: 1.1rem; font-weight: 800; color: var(--white); letter-spacing: .3px; }
+.navbar__name  { font-size: 1.1rem; font-weight: 800; color: var(--gold); letter-spacing: .3px; }
 .navbar__name span { color: var(--gold); }
 
 .navbar__links {
@@ -215,7 +215,7 @@ p  { line-height: 1.75; }
   padding: 56px 0 36px;
 }
 .footer__brand .shri { color: var(--gold); font-size: .8rem; letter-spacing: 2px; margin-bottom: 6px; }
-.footer__brand h3    { color: var(--white); font-size: 1.1rem; font-weight: 800; }
+.footer__brand h3    { color: var(--gold); font-size: 1.1rem; font-weight: 800; }
 .footer__brand p     { font-size: .87rem; margin-top: 10px; line-height: 1.7; color: #7a99cc; }
 .footer__reg         { margin-top: 16px; font-size: .78rem; color: #5a7ab0; padding: 10px 14px; background: rgba(255,255,255,.04); border-radius: var(--radius-sm); border-left: 3px solid var(--gold); }
 
